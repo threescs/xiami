@@ -1,0 +1,23 @@
+.list-one {
+  width: 100%;
+}
+.list-one ul {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+}
+.list-one ul li {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+.list-one ul li p {
+  position: absolute;
+  top: 0.7rem;
+  left: 3.8rem;
+  font-size: 0.8rem;
+}
+.list-one ul li img {
+  width: 2rem;
+  height: 2rem;
+}

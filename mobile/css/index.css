@@ -1,0 +1,414 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 解决IOS默认滑动很卡的情况 */
+  -webkit-overflow-scrolling: touch;
+}
+/* 禁止缩放表单 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+  resize: none;
+  border: none;
+}
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  display: block;
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: #323135;
+  background-color: #f1f1f1;
+}
+em,
+i {
+  font-style: normal;
+}
+ul,
+li {
+  list-style-type: none;
+}
+strong {
+  font-weight: normal;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+a {
+  text-decoration: none;
+  color: #969696;
+  font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-family: 'Microsoft YaHei';
+}
+img {
+  border: none;
+}
+input {
+  font-family: 'Microsoft YaHei';
+}
+/*单行溢出*/
+.one_txt_cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*多行溢出 手机端使用*/
+/* 水平垂直居中的公共类 */
+/* 水平居中公共类 */
+/* 垂直居中公共类 */
+body {
+  width: 100%;
+  height: 100%;
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  background-color: #FF5E00;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  zoom: 1;
+}
+.navbar:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.navbar .logo {
+  background: url("../img/header.png") no-repeat;
+  display: block;
+  margin-left: 0.5rem;
+  margin-top: 1.5rem;
+  height: 2.5rem;
+  width: 10rem;
+  float: left;
+  background-size: contain;
+}
+.navbar .logo2 {
+  position: absolute;
+  background: url("../img/header2.png") no-repeat;
+  display: block;
+  height: 2.5rem;
+  width: 7rem;
+  float: right;
+  background-size: contain;
+  margin-left: 11rem;
+  margin-top: 1.5rem;
+}
+.header {
+  width: 100%;
+  height: 2.5rem;
+}
+.header ul {
+  zoom: 1;
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+}
+.header ul:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.header ul li {
+  float: left;
+  margin-left: 0.8rem;
+}
+.header ul li a {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.2rem 0.6rem;
+  color: #262b2f;
+}
+.header ul li a a:hover {
+  border-bottom: 1px solid black;
+}
+.musiclist {
+  background-color: #fff;
+  width: 100%;
+  list-style: none;
+}
+.musiclist li {
+  width: 100%;
+  height: 4rem;
+  padding-left: 10px;
+  padding-top: 0.3rem;
+  border-bottom: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+.musiclist li .musicname {
+  width: 100%;
+  height: 3rem;
+  padding-top: 0.3rem;
+}
+.musiclist li .musicname p:nth-child(1) {
+  font-size: 15px;
+  color: black;
+}
+.musiclist li .musicname p:nth-child(2) {
+  font-size: 13px;
+  color: gray;
+  padding-top: 0.2rem;
+}
+.musiclist li .musicimage {
+  position: relative;
+}
+.musiclist li .musicimage img {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 0rem;
+}
+.active {
+  border-bottom: 1px solid #FF5E00;
+}
+.phblist li {
+  width: 100%;
+  font-size: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 5px;
+  overflow: hidden;
+}
+.phblist li a {
+  display: block;
+  float: left;
+  width: 3rem;
+  height: 3rem;
+  padding: 5px;
+}
+.phblist li p {
+  height: 100%;
+  line-height: 4rem;
+}
+.list-one {
+  width: 100%;
+}
+.list-one ul {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.list-one ul li {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+.list-one ul li p {
+  width: 70%;
+  position: absolute;
+  top: 0.7rem;
+  left: 3.8rem;
+  font-size: 0.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list-one ul li img {
+  width: 2rem;
+  height: 2rem;
+}
+.list-two ul {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+}
+.list-two ul li {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 18px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 5px;
+  overflow: hidden;
+  color: #000;
+}
+.content .search {
+  padding: 1rem 1rem 1rem 2rem;
+  position: relative;
+  background-color: white;
+  border: 1px solid #d9d9d9;
+}
+.content .search input {
+  outline: none;
+  font-size: 0.5rem;
+  width: 11rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  border: 0;
+  background-color: #e0e0e0;
+  height: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 14px;
+}
+.content .search a {
+  position: absolute;
+  right: 3rem;
+  top: 1.2rem;
+  width: 2rem;
+  height: 1rem;
+  line-height: 1rem;
+  background-color: #fc9b0b;
+  font-size: 0.5rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+}
+.content .hot-key h3 {
+  padding-top: 0.5rem;
+  padding-left: 0.2rem;
+}
+.content .hot-key div ul li {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 17PX;
+}
+.content .hot-key div ul li p:nth-child(1) {
+  float: left;
+  font-size: 15PX;
+  padding-right: 0.3rem;
+  font-style: italic;
+  color: #fe6923;
+}

@@ -1,0 +1,16 @@
+.list-two ul {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+}
+.list-two ul li {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+.list-two ul li p {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.7rem;
+  font-size: 0.8rem;
+}

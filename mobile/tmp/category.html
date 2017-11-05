@@ -1,0 +1,9 @@
+<img src="css/ban.png" alt="">
+<ul class="musiclist">
+    <li ng-repeat="item in musicList.rows" ng-click="play(item.musicUrl,item.authorUrl,item.musicName,item.authorName)">
+        <div class="musicname">
+            <p>{{item.musicName}}</p>
+            <p>{{item.authorName}}</p>
+        </div>
+    </li>
+</ul>

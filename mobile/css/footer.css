@@ -1,0 +1,103 @@
+footer {
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+footer .process {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+footer .process .go {
+  width: 100%;
+  height: 2px;
+  background-color: #FF5E00;
+  transform: translateX(-100%);
+  transition: all 0.1s linear;
+}
+footer .cover {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../upload/author/1.jpg@!c-400-400");
+  background-position: 0 200px;
+  filter: blur(0.8rem);
+  position: absolute;
+}
+footer .cover .rg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+footer .contain {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 99;
+}
+footer .contain .left {
+  float: left;
+  height: 100%;
+}
+footer .contain .left .one {
+  height: 100%;
+  float: left;
+  margin-right: 0.5rem;
+}
+footer .contain .left .one a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+footer .contain .left .one a img {
+  width: 60px;
+  height: 60px;
+}
+footer .contain .left .two {
+  height: 100%;
+  float: left;
+  color: #fff;
+  font-size: 0.575rem;
+  margin-top: 10px;
+}
+footer .contain .left .two .name {
+  font-size: 0.375rem;
+  margin-top: 10px;
+}
+footer .contain .right {
+  float: right;
+  height: 100%;
+  width: 30%;
+  position: relative;
+}
+footer .contain .right .one {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url("stri.png");
+  background-size: 100px;
+  background-position: 140px 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer .contain .right .two {
+  width: 1.2rem;
+  height: 1.3rem;
+  background-image: url("stri.png");
+  background-size: 100px;
+  background-position: 0px 0;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer .contain .right .active1 {
+  background-position: 70px 0;
+}

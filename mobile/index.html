@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>音乐播放器</title>
+    <style>
+        /*属性选择器，获取页面上面所有的元素包含ng-cloak*/
+
+        [ng-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="#" class="logo"></a>
+        <a href="#" class="logo2"></a>
+    </header>
+    <div ng-app="app">
+        <div class="header" ng-controller="navsController">
+            <ul>
+                <li ng-cloak>
+                    <a href="#/category/{{item.categoryId}}" ng-repeat="item in list.rows" ng-click="six($index,item.categoryId)" ng-class="{active: currentId == item.categoryId}">{{item.categoryName}}</a>
+                </li>
+            </ul>
+        </div>
+        <div ng-view>
+            <!-- -->
+        </div>
+        <audio id="musicId"></audio>
+        <!-- 底部播放器 -->
+        <footer ng-controller="footerController">
+            <div class="process">
+                <div class="go"></div>
+            </div>
+            <div class="cover">
+                <div class="rg"></div>
+            </div>
+            <div class="contain">
+                <div class="left">
+                    <div class="one">
+                        <a href="#">
+                            <img alt="" id="img" src="../upload/author/1.jpg@!c-400-400">
+                        </a>
+                    </div>
+                    <div class="two">
+                        <p id="title">带你去旅行</p>
+                        <p id="name">校长</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="one"></div>
+                    <div class="two" ng-click="go()" ng-class="{active1:bofang}"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular/angular-route.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/category.js"></script>
+</body>
+
+</html>

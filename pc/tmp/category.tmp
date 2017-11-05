@@ -1,0 +1,36 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        添加分类
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">添加分类</h4>
+        </div>
+        <div class="modal-body">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入分类名" ng-model="newcategory">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default save-close" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" ng-click="save()">保存</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered">
+    <tr>
+        <td>序号</td>
+        <td>分类名称</td>
+        <td>操作</td>
+    </tr>
+    <tr ng-repeat="item in category.rows">
+        <td>{{$index+1}}</td>
+        <td>{{item.categoryName}}</td>
+        <td><a href="javascript:;" class="btn btn-danger" ng-click="delete(item.categoryId)">操作</a></td>
+    </tr>
+</table>

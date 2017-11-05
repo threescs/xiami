@@ -1,0 +1,17 @@
+<div class="content">
+    <div class="search">
+        <input type="search" placeholder="输入歌曲、艺人、专辑搜索" class="key">
+        <a href="#">搜索</a>
+    </div>
+    <div class="hot-key">
+        <h3>今日搜索热词</h3>
+        <div>
+            <ul>
+                <li ng-repeat="item in musicList.rows">
+                    <p>{{$index+1}}</p>
+                    <p>{{item.musicName}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
